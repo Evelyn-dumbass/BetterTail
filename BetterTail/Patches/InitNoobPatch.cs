@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace BetterTail
 {
-    [HarmonyPatch(typeof(VRRig), "InitializeNoobMaterial")]
+    [HarmonyPatch(typeof(VRRig), "InitializeNoobMaterialLocal")]
     internal class InitNoobPatch
     {
         public static void Postfix(ref VRRig __instance)
